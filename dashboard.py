@@ -9,12 +9,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-current_directory = '/Users/themisefthimiou/Library/CloudStorage/Box-Box/KorbLab/Study_2_NMES_Review/fNMES_Review_updated_June_2023/'
-os.chdir(current_directory)
-os.getcwd()
+# Get the current directory of the script
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
+# Set the data directory
+data_directory = os.path.join(current_directory, "data")
 
 # Load data
-data = pd.read_csv('./table_for_db.csv')
+data_file_path = os.path.join(data_directory, "table_for_db.csv")
+data = pd.read_csv(data_file_path)
 
 # Streamlit app
 def main():
