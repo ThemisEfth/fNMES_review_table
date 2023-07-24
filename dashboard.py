@@ -9,15 +9,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# Get the current directory of the script
-current_directory = os.path.dirname(os.path.abspath(__name__))
-
-# Set the data directory
-data_directory = os.path.join(current_directory, "data")
-
 # Load data
-data_file_path = os.path.join(data_directory, "table_for_db.csv")
-data = pd.read_csv(data_file_path)
+data = pd.read_csv('Data/table_for_db.csv')
 
 # Streamlit app
 def main():
