@@ -9,8 +9,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
+|
 # Load data
-data = pd.read_csv('Data/table_for_db.csv')
+data = pd.read_csv('Data/table_for_DB.csv')
 
 # Streamlit app
 def main():
