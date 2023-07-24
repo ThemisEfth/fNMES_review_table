@@ -7,14 +7,13 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
 # Load data
-data = pd.read_csv('Data/table_for_DB.csv')
+data = pd.read_csv("Data/table_for_DB.csv")
 
 # Streamlit app
 def main():
-    st.title('Results from a systematic review of 134 studies utilising fNMES')
+    st.title('Systematic Review - Efthimiou et al. 2023')
 
     # Add data exploration widgets here
     # e.g., filters, sliders, etc.
