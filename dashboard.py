@@ -13,7 +13,7 @@ import os
 data_file_url = "https://github.com/ThemisEfth/fNMES_review_table/blob/main/data/table_for_DB.csv"
 
 # Load data from the GitHub raw URL
-data = pd.read_csv(data_file_url)
+data = pd.read_csv(data_file_url, sep='\t')
 
 # Streamlit app
 def main():
