@@ -9,15 +9,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-# Get the current directory of the script
-current_directory = os.path.dirname(os.path.abspath(__file__))
+# Raw URL of the CSV file on GitHub
+data_file_url = "https://github.com/ThemisEfth/fNMES_review_table/blob/main/data/table_for_DB.csv"
 
-# Set the data directory
-data_directory = os.path.join(current_directory, "data")
-
-# Load data
-data_file_path = os.path.join(data_directory, "table_for_db.csv")
-data = pd.read_csv(data_file_path)
+# Load data from the GitHub raw URL
+data = pd.read_csv(data_file_url)
 
 # Streamlit app
 def main():
