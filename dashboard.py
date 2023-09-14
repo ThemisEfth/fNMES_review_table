@@ -52,27 +52,5 @@ def main():
     # Create visualizations using matplotlib or other libraries
     st.subheader('Data Visualisation')
 
-    # Create a histogram using Matplotlib
-    st.subheader('Histogram of electrode surface area cm2')
-    fig, ax = plt.subplots()
-    ax.hist(data['Elec surface (cm2)'], bins=10, edgecolor='black')
-    # Add x and y-axis labels
-    ax.set_xlabel('Electrode Surface Area (cm2)')
-    ax.set_ylabel('Frequency')
-    st.pyplot(fig)
-
-    # Create a histogram using Matplotlib
-    st.subheader('Histogram of Pulse Widths')
-    fig, ax = plt.subplots()
-    ax.hist(data['Phase pulse Width (usec)'], bins=10, edgecolor='black')
-    # Add x and y-axis labels
-    ax.set_xlabel('Pulse Width (usec)')
-    ax.set_ylabel('Frequency')
-    st.pyplot(fig)
-
-    # Display filtered data in a table
-    st.subheader('Filtered Data Table')
-    st.table(filtered_data)
-
 if __name__ == '__main__':
     main()
