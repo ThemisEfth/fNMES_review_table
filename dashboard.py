@@ -19,7 +19,7 @@ def main():
     # e.g., filters, sliders, etc.
 
     # Display data in a table
-    st.subheader('Data Table')
+    st.subheader('Literature Review with Filters')
     st.dataframe(data)
 
     # Filter by goal
@@ -48,9 +48,6 @@ def main():
         filtered_data = filtered_data[filtered_data['Waveform'].isin(waveform_filter)]
     if pulsetype_filter:
         filtered_data = filtered_data[filtered_data['Pulse Type'].isin(pulsetype_filter)]
-
-    # Create visualizations using matplotlib or other libraries
-    st.subheader('Data Visualisation')
 
 if __name__ == '__main__':
     main()
